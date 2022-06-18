@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* Start From Here */
+
+.wrap{
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* header start*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header h1 a img{
+  width: 220px;
+  height: 40px;
+  display: block;
+}
+
+.button{
+  width: 295px;
+}
+
+.button ul{
+  display: flex;
+}
+
+.button ul a{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button a{
+  text-decoration: none;
+  color: #3F5D45;
+  font-weight: bold;
+}
+
+.tag{
+  width: 218px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag a:hover{
+  opacity: 0.6;
+}
+
+.cart{
+  margin-left: 79px;
+}
+/* header end*/
+
+/* banner start*/
+.banner{
+  width: 940px;
+  height: 496px;
+  /* border: 1px solid #000; */
+  background: no-repeat center/100% url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true");
+  margin-bottom: 60px;
+}
+/* banner end*/
+
+/* products start */
+.products{
+  display: flex;
+  justify-content: space-between;
+}
+
+  /* list */
+.products-list{
+  width: 300px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .products-list h2, .products-list li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.products-list h2{
+  font-size: 24px;
+  line-height: 1.375;
+  text-align: center;
+  padding: 16px 0;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+.products-list li{
+  border: 1px solid #EAF0ED;
+  color: #3F5D45;
+  /* padding: 16px 64px; */
+}
+
+.products-list a{
+  text-decoration: none;
+  color: #3F5D45;
+  font-size: 24px;
+  line-height: 1.375;
+  font-weight: bold;
+  padding: 16px 0;
+  text-align: center;
+  display: block;
+}
+
+.products-list a:hover{
+  color: #3F5D45;
+  background-color: #EAF0ED;
+}
+
+  /* pictures */
+.products-pictures .products-cards{
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products-pictures .products-cards .card{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.products-pictures .products-cards .card .daily-special p{
+  width: 36px;
+  height: 106.73px;
+  color: #EAF0ED;
+  font-size: 16px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #3F5D45;
+  position: absolute;
+  top: 0px;  
+  left: 20px;
+}
+
+.products-pictures .products-cards .card .favorite a{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;  
+  right: 18.35px;
+}
+
+.products-pictures .products-cards .card ul{
+  width: 300px;
+  height: 56px;
+  border: 1px solid #EAF0ED;
+  display: flex;
+  justify-content: space-around;
+}
+.products-pictures .products-cards .card ul li{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 20px;
+  color: #3F5D45;
+}
+
+.products-pictures .products-cards .card ul .price{
+  padding-left: 25px;
+  border-left: 1px solid #EAF0ED;
+}
+
+.add-to-cart{
+  border: 1px solid #EAF0ED;
+  color: #3F5D45;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.375;
+  font-weight: bold;
+  padding: 16px 90px;
+  background: #EAF0ED;
+  white-space: nowrap;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart:hover{
+  color: #EAF0ED;
+  background-color: #3F5D45;
+}
+
+.pages-button ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pages-button ul li{
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+}
+
+.pages-button ul li a{
+  font-size: 20px;
+  padding: 18px;
+  text-decoration: none;
+  color: #3F5D45;
+  display: block;
+}
+
+.number:hover{
+  color: #EAF0ED;
+  background-color: #3F5D45;
+}
+
+.arrow:hover{
+  background-color: #EAF0ED;
+}
+/* products end */
