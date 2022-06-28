@@ -193,10 +193,10 @@ body {
 .ball2 {
   position: absolute;
   background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg');
-  width: 210px;
+  width: 220px;
   height: 317px;
-  right: -100px;
-  top: 80%;
+  right: 0px;
+  top: 45%;
   z-index: -1;
 }
 
@@ -282,8 +282,7 @@ body {
     width: 49px;
     height: 126px;
     background-size: 126px;
-
-    top: calc(190vh);
+    top: calc(114vh);
     /* z-index: -1; */
   }
 
