@@ -301,7 +301,6 @@ body {
     background-size: 153px;
     top: 50px;
     left: 0px;
-    /* z-index: -1; */
   }
 
   .header-nav {
@@ -311,7 +310,7 @@ body {
     left: 0;
     border-bottom: 1px solid #FFD153;
     background-color: #FFFFFF;
-
+    z-index: 999;
     /* 設定 position: fixed 後會脫離文檔流，重新設定 padding */
     align-items: center;
     padding: 16px 20px;
